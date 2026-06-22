@@ -1,4 +1,6 @@
-# rekognition-image-labels
+# Image Labels Generator using Amazon Rekognition
+
+A Python command-line tool that detects objects, scenes, and concepts in an image stored in Amazon S3 using Amazon Rekognition. It prints each detected label with its confidence score and opens a window showing the image with labelled bounding boxes around the detected objects.
 
 ## AWS Services Used
 
