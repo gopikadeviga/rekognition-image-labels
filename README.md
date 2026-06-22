@@ -4,10 +4,10 @@ A Python command-line tool that detects objects, scenes, and concepts in an imag
 
 # How it works
 
--An image is uploaded to an Amazon S3 bucket.
--A local Python script, authenticated through an IAM user configured with the AWS CLI, calls Rekognition's detect_labels API on that image.
--Rekognition returns the labels with confidence scores, which the script prints to the console.
--The script downloads the image and draws a labelled bounding box (name and confidence) around each detected object, then displays it.
+1.An image is uploaded to an Amazon S3 bucket.
+2.A local Python script, authenticated through an IAM user configured with the AWS CLI, calls Rekognition's detect_labels API on that image.
+3.Rekognition returns the labels with confidence scores, which the script prints to the console.
+4.The script downloads the image and draws a labelled bounding box (name and confidence) around each detected object, then displays it.
 
 ## AWS Services Used
 
@@ -24,8 +24,29 @@ A Python command-line tool that detects objects, scenes, and concepts in an imag
 -An AWS account and an IAM user with programmatic access
 -The AWS CLI installed and configured
 
-Note : The S3 bucket and the Rekognition call must be in the same AWS region.
+> Note : The S3 bucket and the Rekognition call must be in the **same AWS region**.
 
+## IAM Permissions
+
+The IAM user is given the least privilage, only two permissions required:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "rekognition:DetectLabels",
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+    }
+  ]
+}
+```
 ## Rekognition labels detected output
 
 <img width="925" height="662" alt="0 2 rekognition_detected_output" src="https://github.com/user-attachments/assets/927e7493-7cac-4311-a007-a01a143d0f41" />
