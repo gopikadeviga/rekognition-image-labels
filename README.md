@@ -16,7 +16,15 @@ A Python command-line tool that detects objects, scenes, and concepts in an imag
 | Amazon S3 | Stores the input image |
 | Amazon Rekognition | Performs label detection (managed computer vision) |
 | AWS IAM | Provides programmatic credentials with least-privilege access |
-| AWS CLI | Configures local credentials used by the SDK |
+| AWS CLI | Configures local credentials used by the SDK(boto 3) |
+
+# Requirements
+
+-Python 3.9 or later
+-An AWS account and an IAM user with programmatic access
+-The AWS CLI installed and configured
+
+Note : The S3 bucket and the Rekognition call must be in the same AWS region.
 
 ## Rekognition labels detected output
 
