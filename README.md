@@ -49,10 +49,6 @@ The IAM user is given the least privilage, only two permissions required:
 }
 ```
 
-## Rekognition labels detected output
-
-<img width="925" height="662" alt="0 2 rekognition_detected_output" src="https://github.com/user-attachments/assets/927e7493-7cac-4311-a007-a01a143d0f41" />
-
 ### Example output
 
 ```
@@ -68,3 +64,6 @@ Detected 10 label(s) for 'street.jpg':
   Person                     98.40%
   Cityscape                  98.24%
 ```
+## Rekognition labels detected output
+
+<img width="925" height="662" alt="0 2 rekognition_detected_output" src="https://github.com/user-attachments/assets/927e7493-7cac-4311-a007-a01a143d0f41" />
