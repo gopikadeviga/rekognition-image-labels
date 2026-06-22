@@ -48,6 +48,21 @@ The IAM user is given the least privilage, only two permissions required:
   ]
 }
 ```
+
 ## Rekognition labels detected output
 
 <img width="925" height="662" alt="0 2 rekognition_detected_output" src="https://github.com/user-attachments/assets/927e7493-7cac-4311-a007-a01a143d0f41" />
+
+```
+Detected 10 label(s) for 'street.jpg':
+  City                      100.00%
+  Metropolis                100.00%
+  Urban                     100.00%
+  Road                      100.00%
+  Street                    100.00%
+  Neighborhood               99.99%
+  Intersection               99.64%
+  Car                        99.45%
+  Person                     98.40%
+  Cityscape                  98.24%
+```
