@@ -67,6 +67,13 @@ pip install -r requirements.txt
 aws configure
 ```
 
+Options:
+
+- `--max-labels` &mdash; number of labels to return (default 10)
+- `--min-confidence` &mdash; minimum confidence, 0 to 100 (default 75)
+- `--region` &mdash; AWS region (defaults to your configured CLI region)
+- `--no-display` &mdash; skip the pop-up window (useful on headless machines)
+  
 ### Example output
 
 ```
