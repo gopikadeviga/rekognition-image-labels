@@ -89,6 +89,12 @@ Detected 10 label(s) for 'street.jpg':
   Person                     98.40%
   Cityscape                  98.24%
 ```
+
 ## Rekognition labels detected output
 
 <img width="925" height="662" alt="0 2 rekognition_detected_output" src="https://github.com/user-attachments/assets/927e7493-7cac-4311-a007-a01a143d0f41" />
+
+## Notes
+
+- Only countable objects (Person, Car, Dog, and similar) return bounding boxes. Abstract labels such as "Outdoors" or "Nature" are detected but not drawn.
+- The pop-up window needs a desktop environment. On a headless machine, use `--no-display`.
