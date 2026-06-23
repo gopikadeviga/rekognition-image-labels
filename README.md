@@ -55,6 +55,18 @@ The IAM user is given the least privilage, only two permissions required:
 git clone https://github.com/<your-username>/rekognition-image-labels.git
 cd rekognition-image-labels
 
+# Create and activate a virtual environment
+python -m venv venv
+venv\Scripts\activate          # Windows
+# source venv/bin/activate     # macOS / Linux
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure your AWS credentials (one time)
+aws configure
+```
+
 ### Example output
 
 ```
