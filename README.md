@@ -9,7 +9,6 @@ A Python command-line tool that detects objects, scenes, and concepts in an imag
 3. Rekognition returns the labels with confidence scores, which the script prints to the console.
 4. The script downloads the image and draws a labelled bounding box (name and confidence) around each detected object, then displays it.
 
-
 ## AWS Services Used
 
 | Service | Role in this project |
