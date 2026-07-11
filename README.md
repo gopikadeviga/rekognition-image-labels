@@ -47,6 +47,12 @@ The IAM user is given the least privilage, only two permissions required:
 }
 ```
 
+## Required label policies provided
+
+<img width="875" height="631" alt="0 5 Labelpoilcy" src="https://github.com/user-attachments/assets/f026011c-a4e9-41c2-aa9c-a13777f9afd7" />
+
+---
+
 ## Setup
 
 ```bash
