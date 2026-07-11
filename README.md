@@ -25,6 +25,10 @@ A Python command-line tool that detects objects, scenes, and concepts in an imag
 
 > Note : The S3 bucket and the Rekognition call must be in the **same AWS region**.
 
+## S3 bucket
+
+<img width="966" height="472" alt="0 3 S3-bucket" src="https://github.com/user-attachments/assets/ac6b367b-7f53-4c15-8ae8-81d0fa35a147" />
+
 ## IAM Permissions
 
 The IAM user is given the least privilage, only two permissions required:
