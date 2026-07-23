@@ -2,6 +2,10 @@
 
 A Python command-line tool that detects objects, scenes, and concepts in an image stored in Amazon S3 using Amazon Rekognition. It prints each detected label with its confidence score and opens a window showing the image with labelled bounding boxes around the detected objects.
 
+## Architecture Diagram
+
+<img width="854" height="775" alt="rekognition-architecture" src="https://github.com/user-attachments/assets/2ca17da3-6b36-4daf-9b23-ef95d97fa17e" />
+
 ## How it works
 1. An image is uploaded to an Amazon S3 bucket.
 2. A local Python script, authenticated through an IAM user configured with the AWS CLI, calls Rekognition's detect_labels API on that image.
