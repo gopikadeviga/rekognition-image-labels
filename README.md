@@ -78,7 +78,6 @@ pip install -r requirements.txt
 # Configure your AWS credentials (one time)
 aws configure
 ```
-
 Options:
 
 - `--max-labels` &mdash; number of labels to return (default 10)
